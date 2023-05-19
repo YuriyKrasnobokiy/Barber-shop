@@ -21,37 +21,52 @@
     <title>barber-shop</title>
   </head>
   <body>
-    <div class="sidebar">
-      <ul class="sidebar-list">
-        <li class="sidebar-list-item">Instagram</li>
-        <li class="sidebar-list-item">Youtube</li>
-      </ul>
-      <img src="./images/hero-logo.svg" alt="logo" />
-    </div>
-
     <header class="header">
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="nav-list-item">Про нас</li>
-          <li class="nav-list-item">Послуги та ціни</li>
-          <li class="nav-list-item">Майстри</li>
-          <li class="nav-list-item">Контакти</li>
-        </ul>
-      </nav>
+      <div class="header-container container">
+        <nav class="header-nav">
+          <img class="header-logo" src="./images/header-logo.svg" alt="logo" />
+          <ul class="header-nav-list list">
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-item-link link">Про нас</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-item-link link">Послуги та ціни</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-item-link link">Майстри</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-item-link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
 
-      <div class="header-contacts">
-        <a href="tel:+38 044 111 11 11" class="header-contacts-link">+38 044 111 11 11</a>
-        <button class="header-button">онлайн-запис</button>
+        <div class="header-contacts">
+          <a href="tel:+38 044 111 11 11" class="header-contacts-link link">+38 044 111 11 11</a>
+          <button type="button" class="header-button">онлайн-запис</button>
+        </div>
       </div>
     </header>
+    <div class="wrapper container">
+      <div class="sidebar">
+        <ul class="sidebar-list list">
+          <li class="sidebar-list-item">
+            <a href="#" class="sidebar-item-link link" title="Instagram">Instagram</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" class="sidebar-item-link link" title="Youtube">Youtube</a>
+          </li>
+        </ul>
+      </div>
 
-    <div class="hero">
-      <div class="hero-text">
-        <h2 class="section-title">A hair salon for men in Kyiv</h2>
-        <h1 class="hero-title">BarberShop</h1>
-        <p class="hero-descr">
-          Ми експерти в модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.
-        </p>
+      <div class="hero">
+        <div class="hero-text">
+          <h2 class="hero-pre-title pre-title">A hair salon for men in Kyiv</h2>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-descr">
+            Ми експерти в модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.
+          </p>
+        </div>
       </div>
     </div>
   </body>
