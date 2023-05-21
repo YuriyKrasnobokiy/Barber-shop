@@ -50,7 +50,7 @@
 
     <main>
       <section class="hero">
-        <div class="hero-container">
+        <div class="hero-container container">
           <div class="sidebar">
             <ul class="sidebar-list list">
               <li class="sidebar-list-item">
@@ -75,9 +75,16 @@
       <section class="about section">
         <div class="about-container container">
           <div class="about-imgs">
-            <img class="about-img1" src="./images/about-1.jpg" alt="барбер стриже бороду" />
-            <img class="about-img2" src="./images/about-2.jpg" alt="окантовка" />
+            <ul class="about-imgs-list list">
+              <li class="about-imgs-list-item">
+                <img class="about-img1" src="./images/about-1.jpg" alt="барбер стриже бороду" />
+              </li>
+              <li class="about-imgs-list-item">
+                <img class="about-img2" src="./images/about-2.jpg" alt="окантовка" />
+              </li>
+            </ul>
           </div>
+
           <div class="about-text">
             <p class="about-pre-title pre-title">Про нас</p>
             <h2 class="about-title section-title">Кращий Barbershop твого міста</h2>
@@ -94,13 +101,52 @@
           </div>
         </div>
       </section>
+
       <section class="prices section">
         <div class="prices-container container">
           <h2 class="prices-pre-title pre-title">Проведи час в компанії найкращих майстрів</h2>
           <h1 class="prices-title section-title">Послуги та ціни</h1>
           <div class="prices-cards-wrapper">
-            <div class="prices-left-card"></div>
-            <div class="prices-right-card"></div>
+            <div class="prices-left-card prices-card">
+              <ul class="prices-left-card-list list prices-card-list">
+                <li class="left-card-item card-item">
+                  <p class="left-card-item-text card-item-text">Чоловіча стрижка</p>
+                  <span class="left-card-item-price card-item-price">від 300 грн</span>
+                </li>
+                <li class="left-card-item card-item">
+                  <p class="left-card-item-text card-item-text">Стрижка вусів</p>
+                  <span class="left-card-item-price card-item-price">від 200 грн</span>
+                </li>
+                <li class="left-card-item card-item">
+                  <p class="left-card-item-text card-item-text">Стрижка бороди</p>
+                  <span class="left-card-item-price card-item-price">від 200 грн</span>
+                </li>
+                <li class="left-card-item card-item">
+                  <p class="left-card-item-text card-item-text">Гоління небезпечною бритвою</p>
+                  <span class="left-card-item-price card-item-price">від 200 грн</span>
+                </li>
+              </ul>
+            </div>
+            <div class="prices-right-card prices-card">
+              <ul class="right-prices-card-list list prices-card-list">
+                <li class="right-card-item card-item">
+                  <p class="right-card-item-text card-item-text">Стрижка у стажера</p>
+                  <span class="right-card-item-price card-item-price">від 50 грн</span>
+                </li>
+                <li class="right-card-item card-item">
+                  <p class="right-card-item-text card-item-text">Стрижка під насадку</p>
+                  <span class="right-card-item-price card-item-price">від 200 грн</span>
+                </li>
+                <li class="right-card-item card-item">
+                  <p class="right-card-item-text card-item-text">Стрижка дитяча (до 12 років)</p>
+                  <span class="right-card-item-price card-item-price">від 300 грн</span>
+                </li>
+                <li class="right-card-item card-item">
+                  <p class="right-card-item-text card-item-text">Камуфлювання сивини</p>
+                  <span class="right-card-item-price card-item-price">від 200 грн</span>
+                </li>
+              </ul>
+            </div>
           </div>
           <button class="prices-button btn">онлайн-запис</button>
         </div>

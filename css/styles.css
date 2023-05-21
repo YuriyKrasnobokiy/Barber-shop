@@ -13,6 +13,9 @@
   --btn-border-color: #ff6c00;
   --btn-text-color1: #ffffff;
   --btn-text-color2: #303030;
+
+  --prices-left-card-bg: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  --prices-right-card-bg: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 p,
@@ -40,7 +43,7 @@ img {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
   padding-left: 55px;
   padding-right: 55px;
   margin: 0 auto;
@@ -153,6 +156,7 @@ body {
 
 .header-nav-list {
   display: flex;
+  align-items: center;
 }
 
 .nav-list-item:not(:last-child) {
@@ -201,20 +205,14 @@ body {
 
 /* HERO */
 
-.hero {
-  display: flex;
-  justify-content: space-between;
-}
-
 .hero-container {
   display: flex;
   padding-left: 53px;
   padding-right: 62px;
-  margin: 0 auto;
 }
 
 .hero-text {
-  padding: 272px 526px 200px 100px;
+  padding: 272px 505px 200px 100px;
   max-width: 1073px;
 }
 
@@ -279,7 +277,7 @@ body {
 
   color: var(--gray-on-black);
 
-  width: 400px;
+  /* width: 400px; */
 }
 
 /* ABOUT */
@@ -296,8 +294,11 @@ body {
 }
 
 .about-imgs {
-  display: flex;
   margin-right: 64px;
+}
+
+.about-imgs-list {
+  display: flex;
 }
 
 .about-img1 {
@@ -350,8 +351,12 @@ body {
 
 /* PRICES */
 
-.prices-container {
+.prices {
   background-color: #111319;
+}
+
+.prices-container {
+  /* display: flex; */
 }
 
 .prices-pre-title {
@@ -368,8 +373,53 @@ body {
   margin-bottom: 44px;
 }
 
+.prices-cards-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .prices-left-card {
+  background: var(--prices-left-card-bg);
+}
+
+.prices-right-card {
+  background: var(--prices-right-card-bg);
+}
+
+.prices-card {
   padding: 30px 40px;
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+.card-item {
+  display: flex;
+}
+
+.card-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.card-item-text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--gray-on-black);
+  margin-right: auto;
+}
+
+/* .card-item-text::after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background-color: aqua;
+} */
+
+.card-item-price {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--gray-on-black);
 }
 
 .prices-button {
