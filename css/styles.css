@@ -18,6 +18,13 @@
   --prices-right-card-bg: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 
   --reasons-list-item-background: #f7f7f7;
+
+  --masters-bg: #f7f7f7;
+  --masters-list-item-text-color: #ff6c00;
+
+  --submit-bg: #191c26;
+
+  --contacts-bg: #191c26;
 }
 
 p,
@@ -61,6 +68,7 @@ body {
   color: var(--body-color);
   font-family: Open Sans, sans-serif;
   font-weight: 400;
+  font-style: normal;
 }
 
 .list {
@@ -487,4 +495,123 @@ body {
   font-size: 11px;
   line-height: 15px;
   text-align: center;
+}
+
+/* --------------------MASTERS------------- */
+
+.masters {
+  background: var(--masters-bg);
+}
+
+.masters-pre-title {
+  margin-bottom: 20px;
+}
+
+.masters-title {
+  margin-bottom: 44px;
+}
+
+.masters-pre-title::before {
+  background: var(--black);
+}
+
+.masters-list-item-img {
+  margin-bottom: 30px;
+}
+
+.masters-list-item-title {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 8px;
+}
+
+.masters-list-item-text {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+
+  color: var(--masters-list-item-text-color);
+
+  margin-bottom: 30px;
+}
+
+/* --------------------PORTFOLIO-------------------- */
+
+.portfolio-pre-title {
+  margin-bottom: 44px;
+}
+
+.portfolio-pre-title::before {
+  background: var(--black);
+}
+
+/* ----------------------------Submit----------------------- */
+
+.submit {
+  background: var(--submit-bg);
+  padding-top: 130px;
+  padding-bottom: 192px;
+}
+
+.submit-container {
+  padding-left: 55px;
+  padding-right: 41px;
+}
+
+.submit-title {
+  color: var(--white);
+  margin-bottom: 44px;
+}
+
+/* --------------------------CONTACTS----------------------- */
+
+.contacts {
+  background: var(--contacts-bg);
+}
+
+.contacts-container {
+  padding-left: 100px;
+  padding-right: 105px;
+}
+
+.contacts-address {
+  margin-bottom: 70px;
+}
+
+.contacts-title {
+  color: var(--white);
+}
+
+.contacts-list-iten-link {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+
+  color: var(--gray-on-black);
+}
+
+.contacts-list-iten:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-pre-title {
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.contacts-pre-title::before {
+  background: var(--gray-on-black-opacity);
+}
+
+.contacts-text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+
+  color: var(--gray-on-black);
 }
