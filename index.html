@@ -27,16 +27,16 @@
           <img class="header-logo" src="./images/header-logo.svg" alt="logo" />
           <ul class="header-nav-list list">
             <li class="nav-list-item">
-              <a href="#" class="nav-list-item-link link">Про нас</a>
+              <a href="#about" class="nav-list-item-link link">Про нас</a>
             </li>
             <li class="nav-list-item">
-              <a href="#" class="nav-list-item-link link">Послуги та ціни</a>
+              <a href="#prices" class="nav-list-item-link link">Послуги та ціни</a>
             </li>
             <li class="nav-list-item">
-              <a href="#" class="nav-list-item-link link">Майстри</a>
+              <a href="#masters" class="nav-list-item-link link">Майстри</a>
             </li>
             <li class="nav-list-item">
-              <a href="#" class="nav-list-item-link link">Контакти</a>
+              <a href="#contacts" class="nav-list-item-link link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -70,18 +70,20 @@
         </div>
       </section>
 
-      <section class="about section">
+      <section class="about section" id="about">
         <div class="about-container container">
-          <div class="about-imgs">
-            <ul class="about-imgs-list list">
-              <li class="about-imgs-list-item">
-                <img class="about-img1" src="./images/about-1.jpg" alt="барбер стриже бороду" />
-              </li>
-              <li class="about-imgs-list-item">
-                <img class="about-img2" src="./images/about-2.jpg" alt="окантовка" />
-              </li>
-            </ul>
-          </div>
+          <ul class="about-list list">
+            <li class="about-list-item">
+              <img
+                class="about-list-item-img"
+                src="./images/about-1.jpg"
+                alt="барбер стриже бороду"
+              />
+            </li>
+            <li class="about-imgs-list-item">
+              <img class="about-list-item-img" src="./images/about-2.jpg" alt="окантовка" />
+            </li>
+          </ul>
 
           <div class="about-text">
             <p class="about-pre-title pre-title">Про нас</p>
@@ -89,7 +91,7 @@
             <p class="about-descr descr">
               Якщо ти бажаєш додати в свій образ більше впевненості - тобі точно до нас.
             </p>
-            <p class="abot-text">
+            <p class="about-text">
               Ми команда, яка ніколи не зупиняється на досягнутому і прагне розвитку. Тож коли ти
               потрапиш в руки нашого майстра, то змінишся назавжди. Ми команда, яка завжди з
               клієнтами "на одній хвилі". Тому, ми завжди готові вдосконалити кожного, хто до нас
@@ -100,51 +102,48 @@
         </div>
       </section>
 
-      <section class="prices section">
+      <section class="prices section" id="prices">
         <div class="prices-container container">
           <h2 class="prices-pre-title pre-title">Проведи час в компанії найкращих майстрів</h2>
           <h1 class="prices-title section-title">Послуги та ціни</h1>
-          <div class="prices-cards-wrapper">
-            <div class="prices-left-card prices-card">
-              <ul class="prices-left-card-list list prices-card-list">
-                <li class="left-card-item card-item">
-                  <p class="left-card-item-text card-item-text">Чоловіча стрижка</p>
-                  <span class="left-card-item-price card-item-price">від 300 грн</span>
-                </li>
-                <li class="left-card-item card-item">
-                  <p class="left-card-item-text card-item-text">Стрижка вусів</p>
-                  <span class="left-card-item-price card-item-price">від 200 грн</span>
-                </li>
-                <li class="left-card-item card-item">
-                  <p class="left-card-item-text card-item-text">Стрижка бороди</p>
-                  <span class="left-card-item-price card-item-price">від 200 грн</span>
-                </li>
-                <li class="left-card-item card-item">
-                  <p class="left-card-item-text card-item-text">Гоління небезпечною бритвою</p>
-                  <span class="left-card-item-price card-item-price">від 200 грн</span>
-                </li>
-              </ul>
-            </div>
-            <div class="prices-right-card prices-card">
-              <ul class="right-prices-card-list list prices-card-list">
-                <li class="right-card-item card-item">
-                  <p class="right-card-item-text card-item-text">Стрижка у стажера</p>
-                  <span class="right-card-item-price card-item-price">від 50 грн</span>
-                </li>
-                <li class="right-card-item card-item">
-                  <p class="right-card-item-text card-item-text">Стрижка під насадку</p>
-                  <span class="right-card-item-price card-item-price">від 200 грн</span>
-                </li>
-                <li class="right-card-item card-item">
-                  <p class="right-card-item-text card-item-text">Стрижка дитяча (до 12 років)</p>
-                  <span class="right-card-item-price card-item-price">від 300 грн</span>
-                </li>
-                <li class="right-card-item card-item">
-                  <p class="right-card-item-text card-item-text">Камуфлювання сивини</p>
-                  <span class="right-card-item-price card-item-price">від 200 грн</span>
-                </li>
-              </ul>
-            </div>
+          <div class="prices-list-wrapper">
+            <ul class="prices-left-list list prices-list">
+              <li class="prices-list-item">
+                <p class="prices-list-item-text">Чоловіча стрижка</p>
+                <span class="prices-list-item-price">від 300 грн</span>
+              </li>
+              <li class="prices-list-item">
+                <p class="prices-list-item-text">Стрижка вусів</p>
+                <span class="prices-list-item-price">від 200 грн</span>
+              </li>
+              <li class="prices-list-item">
+                <p class="prices-list-item-text">Стрижка бороди</p>
+                <span class="prices-list-item-price">від 200 грн</span>
+              </li>
+              <li class="prices-list-item">
+                <p class="prices-list-item-text">Гоління небезпечною бритвою</p>
+                <span class="prices-list-item-price">від 200 грн</span>
+              </li>
+            </ul>
+
+            <ul class="prices-right-list list prices-list">
+              <li class="prices-list-item">
+                <p class="prices-list-item-text">Стрижка у стажера</p>
+                <span class="prices-list-item-price">від 50 грн</span>
+              </li>
+              <li class="prices-list-item">
+                <p class="prices-list-item-text">Стрижка під насадку</p>
+                <span class="prices-list-item-price">від 200 грн</span>
+              </li>
+              <li class="prices-list-item">
+                <p class="prices-list-item-text">Стрижка дитяча (до 12 років)</p>
+                <span class="prices-list-item-price">від 300 грн</span>
+              </li>
+              <li class="prices-list-item">
+                <p class="prices-list-item-text">Камуфлювання сивини</p>
+                <span class="prices-list-item-price">від 200 грн</span>
+              </li>
+            </ul>
           </div>
           <button class="prices-button btn">онлайн-запис</button>
         </div>
@@ -172,7 +171,7 @@
           </ul>
           <div class="reasons-text">
             <p class="reasons-pre-title pre-title">Олдскульна традиційна школа</p>
-            <h2 class="reasons-title rection-title">Чому обирають саме нас?</h2>
+            <h2 class="reasons-title section-title">Чому обирають саме нас?</h2>
             <p class="reasons-descr descr">
               Ми маємо найкращі відгуки серед відвідувачів. Але краще один раз прийти та зацінити,
               ніж 10 разів прочитати.
@@ -181,10 +180,10 @@
         </div>
       </section>
 
-      <section class="masters section">
+      <section class="masters section" id="masters">
         <div class="masters-container container">
           <p class="masters-pre-title pre-title">Для справжніх поціновувачів атмосфери</p>
-          <h2 class="masters-title rection-title">Наші майстри</h2>
+          <h2 class="masters-title section-title">Наші майстри</h2>
           <ul class="masters-list list">
             <li class="masters-list-item">
               <img
@@ -194,9 +193,11 @@
                 width="370"
                 height="346"
               />
-              <h3 lang="en" class="masters-list-item-title">John Smith</h3>
-              <p lang="en" class="masters-list-item-text">Extreme Barber</p>
-              <ul class="masters-list-item-socials"></ul>
+              <div class="masters-item-content">
+                <h3 lang="en" class="masters-list-item-title">John Smith</h3>
+                <p lang="en" class="masters-list-item-text">Extreme Barber</p>
+                <ul class="masters-list-item-socials"></ul>
+              </div>
             </li>
 
             <li class="masters-list-item">
@@ -207,9 +208,11 @@
                 width="370"
                 height="346"
               />
-              <h3 lang="en" class="masters-list-item-title">Michele Doe</h3>
-              <p lang="en" class="masters-list-item-text">Extreme Barber</p>
-              <ul class="masters-list-item-socials"></ul>
+              <div class="masters-item-content">
+                <h3 lang="en" class="masters-list-item-title">Michele Doe</h3>
+                <p lang="en" class="masters-list-item-text">Extreme Barber</p>
+                <ul class="masters-list-item-socials"></ul>
+              </div>
             </li>
 
             <li class="masters-list-item">
@@ -220,9 +223,11 @@
                 width="370"
                 height="346"
               />
-              <h3 lang="en" class="masters-list-item-title">Alan Black</h3>
-              <p lang="en" class="masters-list-item-text">Extreme Barber</p>
-              <ul class="masters-list-item-socials"></ul>
+              <div class="masters-item-content">
+                <h3 lang="en" class="masters-list-item-title">Alan Black</h3>
+                <p lang="en" class="masters-list-item-text">Extreme Barber</p>
+                <ul class="masters-list-item-socials"></ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -280,13 +285,13 @@
 
       <section class="submit section">
         <div class="submit-container container">
-          <h2 class="submit-title title">Онлайн-запис</h2>
+          <h2 class="submit-title section-title">Онлайн-запис</h2>
         </div>
       </section>
 
-      <section class="contacts section">
+      <section class="contacts section" id="contacts">
         <div class="contacts-container container">
-          <h2 class="contacts-title title">Контакти</h2>
+          <h2 class="contacts-title section-title">Контакти</h2>
           <address class="contacts-address">
             <ul class="contacts-list list">
               <li class="contacts-list-item">
