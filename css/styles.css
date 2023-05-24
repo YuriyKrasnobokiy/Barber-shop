@@ -439,7 +439,11 @@ body {
 }
 
 .reasons-list {
+  display: flex;
+  flex-wrap: wrap;
   margin-right: 130px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .reasons-list-item {
@@ -448,10 +452,10 @@ body {
   width: 170px;
   height: 133px;
   text-align: center;
-}
 
-.reasons-list-item:not(:last-child) {
-  margin-bottom: 30px;
+  flex-basis: calc(100% / 2 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .reasons-list-item-number {
@@ -614,4 +618,59 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--gray-on-black);
+}
+
+/* ----------------FOOTER-------------------- */
+
+.footer {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--gray-on-black);
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer-list-item:not(:last-child)::before {
+  display: block;
+  content: '';
+  width: 60px;
+  height: 1px;
+  margin-right: 40px;
+
+  background: var(--black);
+}
+
+.footer-list-item-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--black);
 }
