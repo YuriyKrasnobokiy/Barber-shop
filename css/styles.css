@@ -606,15 +606,16 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: var(--white);
+  color: var(--white);
 }
 
-.masters-socials-link:hover .masters-socials-icon,
-.masters-socials-link:focus .masters-socials-icon {
+.masters-socials-link:hover,
+.masters-socials-link:focus {
   fill: var(--accent);
 }
 
 .masters-socials-icon {
-  fill: var(--black);
+  color: currentColor;
 }
 
 /* --------------------PORTFOLIO-------------------- */
@@ -673,6 +674,7 @@ body {
 
 .contacts-title {
   color: var(--white);
+  margin-bottom: 40px;
 }
 
 .contacts-list-iten-link {
@@ -686,8 +688,14 @@ body {
   color: var(--gray-on-black);
 }
 
-.contacts-list-iten:not(:last-child) {
+.contacts-list-item:not(:last-child) {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+.contacts-list-icon {
+  fill: currentColor;
 }
 
 .contacts-pre-title {
