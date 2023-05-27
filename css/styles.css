@@ -643,9 +643,19 @@ body {
 
 /* ----------------------------Submit----------------------- */
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .submit {
   background: var(--submit-bg);
+  padding-top: 130px;
   padding-bottom: 192px;
+  width: 50%;
 }
 
 .submit-container {
@@ -661,6 +671,11 @@ body {
 
 .contacts {
   background: var(--contacts-bg);
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
 }
 
 .contacts-container {
@@ -688,14 +703,17 @@ body {
   color: var(--gray-on-black);
 }
 
-.contacts-list-item:not(:last-child) {
+.contacts-list-item {
   display: flex;
   align-items: center;
+}
+
+.contacts-list-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
 .contacts-list-icon {
-  fill: currentColor;
+  margin-right: 16px;
 }
 
 .contacts-pre-title {
@@ -726,6 +744,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .footer-text {
