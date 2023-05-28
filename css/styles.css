@@ -643,12 +643,10 @@ body {
 
 /* ----------------------------Submit----------------------- */
 
-.wrapper {
+.connect-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .submit {
@@ -692,7 +690,16 @@ body {
   margin-bottom: 40px;
 }
 
-.contacts-list-iten-link {
+.contacts-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-list-item-link {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -701,15 +708,19 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--gray-on-black);
-}
 
-.contacts-list-item {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.contacts-list-item:not(:last-child) {
-  margin-bottom: 20px;
+.contacts-link-pin {
+  align-items: unset;
+}
+
+.contacts-list-item-link:hover,
+.contacts-list-item-link:focus {
+  color: var(--accent);
 }
 
 .contacts-list-icon {
