@@ -26,6 +26,9 @@
   --submit-bg: #191c26;
 
   --contacts-bg: #191c26;
+
+  --time-animation: 300ms;
+  --function-animation: linear;
 }
 
 p,
@@ -102,7 +105,7 @@ body {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.05em;
 }
 
@@ -110,7 +113,7 @@ body {
   font-family: 'Open Sans';
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.66;
+  line-height: 1.67;
 
   letter-spacing: 0.02em;
 }
@@ -130,6 +133,8 @@ body {
   border-radius: 25px;
   width: 160px;
   height: 40px;
+
+  transition: background-color var(--time-animation) var(--function-animation);
 }
 
 .btn:hover,
@@ -174,12 +179,13 @@ body {
 .nav-list-item-link {
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.1em;
   padding-top: 20px;
   padding-bottom: 20px;
 
   color: var(--white);
+  transition: color var(--time-animation) var(--function-animation);
 }
 
 .nav-list-item-link:hover,
@@ -195,11 +201,13 @@ body {
 .header-contacts-link {
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--white);
   margin-right: 40px;
+
+  transition: color var(--time-animation) var(--function-animation);
 }
 
 .header-contacts-link:hover,
@@ -226,8 +234,8 @@ body {
   background-size: cover;
   flex-grow: 1;
   padding-top: 272px;
-  padding-bottom: 200px;
-  padding-left: 100px;
+  padding-bottom: 206px;
+  padding-left: 96px;
 }
 
 .sidebar-list {
@@ -245,9 +253,8 @@ body {
   letter-spacing: 0.2em;
 
   color: #303030;
-  /* writing-mode: vertical-rl;
-  transform: rotate(-180deg); */
-  /* padding: 26px 0; */
+
+  transition: color var(--time-animation) var(--function-animation);
 }
 
 .sidebar-item-link:hover,
@@ -269,7 +276,7 @@ body {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 72px;
-  line-height: 85px;
+  line-height: 1.18;
   letter-spacing: 0.05em;
 
   color: var(--white);
@@ -280,7 +287,7 @@ body {
   font-family: 'Open Sans';
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
 
   color: var(--gray-on-black);
@@ -306,13 +313,13 @@ body {
   flex-shrink: 0;
 }
 
+.about-list-item {
+  height: unset;
+}
+
 .about-list-item:not(:last-child) {
   margin-right: 30px;
 }
-/* 
-.about-right {
-  max-width: 500px;
-} */
 
 .about-pre-title {
   margin-bottom: 20px;
@@ -336,12 +343,15 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
 
-  margin-bottom: 28px;
+  margin-bottom: 44px;
   color: var(--gray-on-white);
 }
 
 .about-button {
   color: var(--btn-text-color2);
+
+  transition: color var(--time-animation) var(--function-animation),
+    background-color var(--time-animation) var(--function-animation);
 }
 
 .about-button:focus,
@@ -439,15 +449,8 @@ body {
 
 /* --------------------REASONS-------------- */
 
-/* .reasons {
-  padding-top: 144px;
-  padding-bottom: 136px;
-} */
-
 .reasons-container {
   display: flex;
-  /* padding-left: 115px;
-  padding-right: 115px; */
 }
 
 .reasons-pre-title {
@@ -607,6 +610,8 @@ body {
   border-radius: 50%;
   background-color: var(--white);
   color: var(--white);
+
+  transition: fill var(--time-animation) var(--function-animation);
 }
 
 .masters-socials-link:hover,
@@ -712,6 +717,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: color var(--time-animation) var(--function-animation);
 }
 
 .contacts-link-pin {
@@ -725,6 +732,9 @@ body {
 
 .contacts-list-icon {
   margin-right: 16px;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
 }
 
 .contacts-pre-title {
@@ -800,4 +810,11 @@ body {
   letter-spacing: 0.2em;
 
   color: var(--black);
+
+  transition: color var(--time-animation) var(--function-animation);
+}
+
+.footer-list-item-link:hover,
+.footer-list-item-link:focus {
+  color: var(--accent);
 }
