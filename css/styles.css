@@ -181,8 +181,8 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 19px;
+  padding-bottom: 19px; */
 
   color: var(--white);
   transition: color var(--time-animation) var(--function-animation);
@@ -343,7 +343,7 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
 
-  margin-bottom: 44px;
+  margin-bottom: 42px;
   color: var(--gray-on-white);
 }
 
@@ -725,16 +725,25 @@ body {
   align-items: unset;
 }
 
+.contacts-icon-phone {
+  stroke-width: 1.5px;
+}
+
 .contacts-list-item-link:hover,
 .contacts-list-item-link:focus {
   color: var(--accent);
 }
 
+.contacts-list-item-link:hover .contacts-list-icon {
+  stroke: var(--accent);
+}
+
 .contacts-list-icon {
   margin-right: 16px;
-  fill: currentColor;
-  width: 24px;
-  height: 24px;
+  fill: none;
+  stroke: #9da4bd;
+
+  transition: stroke var(--time-animation) var(--function-animation);
 }
 
 .contacts-pre-title {
