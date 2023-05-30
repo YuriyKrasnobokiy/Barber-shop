@@ -28,6 +28,10 @@
 
   --contacts-bg: #191c26;
 
+  --backdrop-background-color: rgba(23, 26, 36, 0.7);
+
+  --modal-background: #ffffff;
+
   --time-animation: 300ms;
   --function-animation: linear;
 }
@@ -871,4 +875,69 @@ body {
 .footer-list-item-link:hover,
 .footer-list-item-link:focus {
   color: var(--accent);
+}
+
+/* -----------MODAL WINDOW----------- */
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--backdrop-background-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity var(--time-animation) var(--function-animation),
+    visibility var(--time-animation) var(--function-animation);
+}
+
+/* .backdrop.is-hidden .modal {
+  transform: scale(4) rotate(270deg);
+} */
+
+.modal {
+  width: 500px;
+  min-height: 500px;
+  background: var(--modal-background);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%) scale(1) rotate(0); */
+  transition: transform var(--time-animation);
+}
+
+.modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #303030;
+  border-radius: 50%;
+  transition: border var(--time-animation) var(--function-animation);
+}
+
+.modal-close:focus,
+.modal-close:hover {
+  border: 1px solid var(--accent);
+}
+
+.modal-close:focus .close-icon,
+.modal-close:hover .close-icon {
+  fill: var(--accent);
+}
+
+.close-icon {
+  transition: fill var(--time-animation) var(--function-animation);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
