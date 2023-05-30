@@ -22,6 +22,7 @@
 
   --masters-bg: #f7f7f7;
   --masters-list-item-text-color: #ff6c00;
+  --masters-item-hidden-text: rgba(23, 26, 36, 0.5);
 
   --submit-bg: #191c26;
 
@@ -215,6 +216,7 @@ body {
 
 .header-button {
   color: var(--btn-text-color1);
+  margin-right: 3px;
 }
 
 /* --------------------HERO---------------- */
@@ -574,10 +576,34 @@ body {
   margin-bottom: -30px;
 }
 
+.masters-item-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
 .masters-list-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.masters-list-item:hover .masters-item-hidden-text {
+  transform: translateX(0);
+}
+
+.masters-item-hidden-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 40px 30px;
+  background: var(--masters-item-hidden-text);
+  color: var(--gray-on-black);
+  height: 100%;
+  overflow: auto;
+  transform: translateX(100%);
+  transition: transform var(--time-animation) var(--function-animation);
 }
 
 .masters-item-content {
@@ -664,6 +690,11 @@ body {
 }
 
 /* ----------------------------Submit----------------------- */
+
+.connect {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 .connect-container {
   display: flex;
@@ -791,9 +822,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding-left: 55px;
-  padding-right: 55px;
 }
 
 .footer-text {
