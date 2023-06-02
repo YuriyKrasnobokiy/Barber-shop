@@ -942,6 +942,13 @@ body {
   margin-bottom: 40px;
 }
 
+.modal-input-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--black);
+}
+
 .modal-input {
   width: 100%;
   height: 45px;

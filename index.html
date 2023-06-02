@@ -502,16 +502,20 @@
         </button>
         <p class="modal-title">Lorem ipsum dolor sit amet consectetur</p>
         <form action="#" class="modal-form">
-          <label for=""></label>
-          <input
-            type="text"
-            name="user-name"
-            minlength="2"
-            required
-            placeholder="John Snow"
-            class="modal-input"
-          />
+          <div class="modal-form-field">
+            <label class="modal-input-label" for="user-name">Введіть Ваше ім'я</label>
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              minlength="2"
+              placeholder="John Snow"
+              id="user-name"
+              required
+            />
+          </div>
 
+          <label class="modal-input-label" for="user-tel">Введіть Ваш номер телефону</label>
           <input
             type="tel"
             class="modal-input"
@@ -522,14 +526,18 @@
             title="+38 (063) 111-11-11"
             placeholder="+38 (063) 111-11-11"
             required
+            id="user-tel"
           />
 
-          <input
-            type="email"
-            name="user-email"
-            placeholder="Example@gmail.com"
-            class="modal-input"
-          />
+          <label class="modal-input-label"
+            >Введіть Вашу електронну пошту
+            <input
+              type="email"
+              name="user-email"
+              placeholder="Example@gmail.com"
+              class="modal-input"
+            />
+          </label>
 
           <button type="submit" class="submit-button btn">Відправити</button>
           <button type="reset" class="submit-button btn">Скасувати</button>
