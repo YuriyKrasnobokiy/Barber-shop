@@ -446,7 +446,8 @@
                       <svg class="contacts-list-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-map-pin2"></use>
                       </svg>
-                      вул. Волошкова, 7А<br />
+                      вул. Волошкова, 7А
+                      <br />
                       Київ, 08132
                     </a>
                   </li>
@@ -486,7 +487,7 @@
           </li>
 
           <li class="footer-list-item">
-            <a href="#" class="footer-list-item-link link">Youtube</a>
+            <a href="#" class="footer-list-item-link link"> Youtube </a>
           </li>
         </ul>
       </div>
@@ -499,6 +500,40 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Lorem ipsum dolor sit amet consectetur</p>
+        <form action="#" class="modal-form">
+          <label for=""></label>
+          <input
+            type="text"
+            name="user-name"
+            minlength="2"
+            required
+            placeholder="John Snow"
+            class="modal-input"
+          />
+
+          <input
+            type="tel"
+            class="modal-input"
+            name="user-tel"
+            pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            minlength="19"
+            maxlength="19"
+            title="+38 (063) 111-11-11"
+            placeholder="+38 (063) 111-11-11"
+            required
+          />
+
+          <input
+            type="email"
+            name="user-email"
+            placeholder="Example@gmail.com"
+            class="modal-input"
+          />
+
+          <button type="submit" class="submit-button btn">Відправити</button>
+          <button type="reset" class="submit-button btn">Скасувати</button>
+        </form>
       </div>
     </div>
 
