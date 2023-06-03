@@ -423,12 +423,30 @@
         </div>
       </section>
 
-      <section class="connect section">
-        <div class="connect-container container">
-          <section class="submit section">
-            <div class="submit-container container">
-              <h2 class="submit-title section-title">Онлайн-запис</h2>
-            </div>
+      <div class="connect-wrap">
+        <div class="connect-wrap-container container">
+          <section class="online section">
+            <h2 class="online-title section-title">Онлайн-запис</h2>
+            <form action="#" class="online-form">
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  name="online-name"
+                  class="online-input"
+                  placeholder="Ім'я*"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="online-tel"
+                  class="online-input"
+                  placeholder="Телефон*"
+                  required
+                />
+              </div>
+              <textarea name="online-text" class="online-text" placeholder="Коментар"></textarea>
+              <button type="submit" class="online-button btn">Відправити</button>
+            </form>
           </section>
 
           <section class="contacts section" id="contacts">
@@ -476,7 +494,7 @@
             </div>
           </section>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer-container container">
@@ -509,35 +527,51 @@
               class="modal-input"
               name="user-name"
               minlength="2"
-              placeholder="John Snow"
-              id="user-name"
+              placeholder="John Snow *"
               required
+              id="user-name"
             />
           </div>
 
-          <label class="modal-input-label" for="user-tel">Введіть Ваш номер телефону</label>
-          <input
-            type="tel"
-            class="modal-input"
-            name="user-tel"
-            pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-            minlength="19"
-            maxlength="19"
-            title="+38 (063) 111-11-11"
-            placeholder="+38 (063) 111-11-11"
-            required
-            id="user-tel"
-          />
+          <div class="modal-form-field">
+            <label for="user-tel" class="modal-input-label">Введіть Ваш номер телефону</label>
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-tel"
+              pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              minlength="19"
+              maxlength="19"
+              title="+38 (063) 111-11-11"
+              value="+38"
+              placeholder="+38 (063) 111-11-11 *"
+              required
+              id="user-tel"
+            />
+          </div>
 
-          <label class="modal-input-label"
-            >Введіть Вашу електронну пошту
+          <div class="modal-form-field">
+            <label for="user-email" class="modal-input-label">
+              Введіть Вашу електронну пошту
+            </label>
             <input
               type="email"
               name="user-email"
               placeholder="Example@gmail.com"
               class="modal-input"
+              id="user-email"
             />
-          </label>
+          </div>
+
+          <div class="modal-form-field">
+            <label for="user-text" class="modal-input-label"> Введіть Ваш коментар </label>
+            <textarea
+              class="modal-text"
+              name="user-text"
+              id="user-text"
+              placeholder="Ваш коментар"
+            ></textarea>
+          </div>
 
           <button type="submit" class="submit-button btn">Відправити</button>
           <button type="reset" class="submit-button btn">Скасувати</button>
