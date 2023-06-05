@@ -1180,7 +1180,7 @@ body {
   margin-right: 5px;
   justify-content: center;
 
-  transition: backgroud-color var(--time-animation) var(--function-animation);
+  transition: background-color var(--time-animation) var(--function-animation);
 }
 
 .modal-check-slider-text::after {
@@ -1194,7 +1194,7 @@ body {
   position: absolute;
 
   transition: transform var(--time-animation) var(--function-animation),
-    backgroud-color var(--time-animation) var(--function-animation);
+    background-color var(--time-animation) var(--function-animation);
 }
 
 .modal-check-slider:checked + .modal-check-slider-text::after {
