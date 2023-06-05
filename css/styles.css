@@ -1074,6 +1074,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   left: 5px;
+  fill: var(--black);
 
   transition: fill var(--time-animation) var(--function-animation);
 }
@@ -1113,6 +1114,14 @@ body {
 .modal-button {
   display: block;
   color: var(--btn-text-color2);
+
+  transition: color var(--time-animation) var(--function-animation),
+    background-color var(--time-animation) var(--function-animation);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  color: var(--white);
 }
 
 .is-hidden {
@@ -1150,4 +1159,49 @@ body {
 
 .modal-check:checked + .modal-check-text .icon-check {
   fill: var(--white);
+}
+
+.modal-check-slider-text {
+  font-size: 14px;
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.modal-check-slider-text::before {
+  display: flex;
+  content: '';
+  width: 40px;
+  height: 22px;
+  border: 1px solid var(--black);
+  border-radius: 50px;
+  margin-right: 5px;
+  justify-content: center;
+
+  transition: backgroud-color var(--time-animation) var(--function-animation);
+}
+
+.modal-check-slider-text::after {
+  content: '';
+  left: 36px;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background-color: #ff6c00;
+  border-radius: 50px;
+  position: absolute;
+
+  transition: transform var(--time-animation) var(--function-animation),
+    backgroud-color var(--time-animation) var(--function-animation);
+}
+
+.modal-check-slider:checked + .modal-check-slider-text::after {
+  transform: translateX(20px);
+  background-color: var(--white);
+}
+
+.modal-check-slider:checked + .modal-check-slider-text::before {
+  background-color: var(--accent);
 }
