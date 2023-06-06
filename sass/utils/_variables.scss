@@ -1,0 +1,35 @@
+:root {
+  --white: #ffffff;
+  --black: #303030;
+  --accent: #ff6c00;
+  --gray-on-black: #9da4bd;
+  --gray-on-black-opacity: #686c7c;
+  --gray-on-white: #555555;
+
+  --body-bg-color: #ffffff;
+  --body-color: #303030;
+
+  --btn-bg-color: transparent;
+  --btn-border-color: #ff6c00;
+  --btn-text-color1: #ffffff;
+  --btn-text-color2: #303030;
+
+  --prices-background: #111319;
+  --prices-left-card-bg: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  --prices-right-card-bg: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+
+  --reasons-list-item-background: #f7f7f7;
+
+  --masters-bg: #f7f7f7;
+  --masters-list-item-text-color: #ff6c00;
+  --masters-item-hidden-text: rgba(23, 26, 36, 0.5);
+
+  --connect-wrap-bg: #191c26;
+
+  --backdrop-background-color: rgba(23, 26, 36, 0.7);
+
+  --modal-background: #ffffff;
+
+  --time-animation: 300ms;
+  --function-animation: linear;
+}

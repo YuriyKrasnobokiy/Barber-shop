@@ -1,0 +1,80 @@
+.reasons-container {
+  display: flex;
+}
+
+.reasons-pre-title {
+  margin-bottom: 20px;
+}
+
+.reasons-pre-title::before {
+  background: var(--black);
+}
+
+.reasons-title {
+  margin-bottom: 20px;
+}
+
+.reasons-descr {
+  color: var(--gray-on-white);
+}
+
+.reasons-left {
+  display: flex;
+  justify-content: center;
+}
+
+.reasons-left,
+.reasons-right {
+  width: calc(50% - 30px);
+}
+
+.reasons-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+}
+
+.reasons-list-item {
+  padding: 20px 24px;
+  background: var(--reasons-list-item-background);
+  width: 170px;
+  height: 133px;
+}
+
+.reasons-list-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.reasons-list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.reasons-list-item-number {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 6px;
+  margin-left: 13px;
+}
+
+.reasons-list-item-number::after {
+  content: '+';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+
+  color: var(--accent);
+}
+
+.reasons-list-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+}

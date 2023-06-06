@@ -1,0 +1,57 @@
+.about {
+  padding-top: 139px;
+  padding-bottom: 121px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+}
+
+.about-list {
+  display: flex;
+  margin-right: 64px;
+  flex-shrink: 0;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-pre-title {
+  margin-bottom: 20px;
+}
+
+.about-pre-title::before {
+  background: var(--black);
+}
+
+.about-title {
+  margin-bottom: 20px;
+}
+
+.about-descr {
+  margin-bottom: 20px;
+  color: var(--gray-on-white);
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 44px;
+  color: var(--gray-on-white);
+}
+
+.about-button {
+  color: var(--btn-text-color2);
+
+  transition: color var(--time-animation) var(--function-animation),
+    background-color var(--time-animation) var(--function-animation);
+}
+
+.about-button:focus,
+.about-button:hover {
+  color: var(--btn-text-color1);
+}

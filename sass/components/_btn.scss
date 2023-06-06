@@ -1,0 +1,23 @@
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  background-color: var(--btn-bg-color);
+
+  padding: 12px 20px;
+
+  border: 1px solid var(--btn-border-color);
+  border-radius: 25px;
+  min-width: 160px;
+  height: 40px;
+
+  transition: background-color var(--time-animation) var(--function-animation);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent);
+}

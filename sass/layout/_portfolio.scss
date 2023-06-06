@@ -1,0 +1,20 @@
+.portfolio-pre-title {
+  margin-bottom: 44px;
+}
+
+.portfolio-pre-title::before {
+  background: var(--black);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.portfolio-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
