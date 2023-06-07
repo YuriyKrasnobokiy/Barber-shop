@@ -15,9 +15,9 @@
   height: 40px;
 
   transition: background-color var(--time-animation) var(--function-animation);
-}
 
-.btn:hover,
-.btn:focus {
-  background-color: var(--accent);
+  &:hover,
+  &:focus {
+    background-color: var(--accent);
+  }
 }

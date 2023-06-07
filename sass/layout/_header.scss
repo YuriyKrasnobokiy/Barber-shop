@@ -38,11 +38,11 @@
 
   color: var(--white);
   transition: color var(--time-animation) var(--function-animation);
-}
 
-.nav-list-item-link:hover,
-.nav-list-item-link:focus {
-  color: var(--accent);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 .header-contacts {
@@ -60,11 +60,11 @@
   margin-right: 40px;
 
   transition: color var(--time-animation) var(--function-animation);
-}
 
-.header-contacts-link:hover,
-.header-contacts-link:focus {
-  color: var(--accent);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 .header-button {

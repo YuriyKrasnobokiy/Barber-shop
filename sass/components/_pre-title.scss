@@ -6,11 +6,11 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
-}
 
-.pre-title::before {
-  content: '';
-  width: 60px;
-  height: 1px;
-  margin-right: 20px;
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+  }
 }

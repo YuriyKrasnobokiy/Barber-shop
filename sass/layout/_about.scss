@@ -20,10 +20,9 @@
 
 .about-pre-title {
   margin-bottom: 20px;
-}
-
-.about-pre-title::before {
-  background: var(--black);
+  &::before {
+    background: var(--black);
+  }
 }
 
 .about-title {
@@ -49,9 +48,9 @@
 
   transition: color var(--time-animation) var(--function-animation),
     background-color var(--time-animation) var(--function-animation);
-}
 
-.about-button:focus,
-.about-button:hover {
-  color: var(--btn-text-color1);
+  &:focus,
+  &:hover {
+    color: var(--btn-text-color1);
+  }
 }

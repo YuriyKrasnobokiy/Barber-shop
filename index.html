@@ -438,6 +438,7 @@
                   type="text"
                   name="online-name"
                   class="online-input"
+                  minlength="2"
                   placeholder="Ім'я*"
                   required
                 />
@@ -446,6 +447,10 @@
                   name="online-tel"
                   class="online-input"
                   placeholder="Телефон*"
+                  pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                  minlength="19"
+                  maxlength="19"
+                  title="+38 (063) 111-11-11"
                   required
                 />
               </div>

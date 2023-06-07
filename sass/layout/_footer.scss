@@ -21,24 +21,24 @@
 .footer-list {
   display: flex;
   align-items: center;
-}
 
-.footer-list::before {
-  content: '';
-  width: 60px;
-  height: 1px;
-  margin-right: 40px;
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    margin-right: 40px;
 
-  background: var(--black);
+    background: var(--black);
+  }
 }
 
 .footer-list-item {
   display: flex;
   align-items: center;
-}
 
-.footer-list-item:not(:last-child) {
-  margin-right: 40px;
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
 }
 
 .footer-list-item-link {
@@ -53,9 +53,9 @@
   color: var(--black);
 
   transition: color var(--time-animation) var(--function-animation);
-}
 
-.footer-list-item-link:hover,
-.footer-list-item-link:focus {
-  color: var(--accent);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }

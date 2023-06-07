@@ -1,9 +1,9 @@
 .portfolio-pre-title {
   margin-bottom: 44px;
-}
 
-.portfolio-pre-title::before {
-  background: var(--black);
+  &::before {
+    background: var(--black);
+  }
 }
 
 .portfolio-list {
