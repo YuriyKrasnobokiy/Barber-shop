@@ -1,5 +1,10 @@
 .reasons-container {
-  display: flex;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 
 .reasons-pre-title {
@@ -20,24 +25,51 @@
 
 .reasons-left {
   display: flex;
-  justify-content: center;
+
+  @media screen and (min-width: 765px) {
+    justify-content: flex-end;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.reasons-right {
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    max-width: unset;
+  }
 }
 
 .reasons-left,
 .reasons-right {
-  width: calc(50% - 30px);
+  @media screen and (min-width: 1200px) {
+    width: calc(50% - 30px);
+  }
 }
 
 .reasons-list {
   display: flex;
   flex-wrap: wrap;
-  width: 370px;
+  @media screen and (min-width: 765px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+  }
 }
 
 .reasons-list-item {
-  padding: 20px 24px;
+  padding: 20px;
   background: var(--reasons-list-item-background);
-  width: 170px;
+  width: calc(50% - 15px);
   height: 133px;
 
   &:nth-child(odd) {
@@ -47,18 +79,23 @@
   &:nth-child(even) {
     margin-top: 30px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    padding: 20px 24px;
+  }
 }
 
 .reasons-list-item-number {
   display: flex;
   justify-content: center;
+  text-align: center;
 
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   letter-spacing: 0.05em;
 
-  margin-bottom: 6px;
   margin-left: 13px;
 
   &::after {
