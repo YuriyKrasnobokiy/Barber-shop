@@ -1,7 +1,7 @@
 .pre-title {
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.36;
+  line-height: 1.91;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   display: flex;
@@ -12,5 +12,9 @@
     width: 60px;
     height: 1px;
     margin-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.36;
   }
 }
