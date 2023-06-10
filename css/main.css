@@ -817,6 +817,14 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
 .contacts-address {
   margin-bottom: 44px;
 }
@@ -874,6 +882,17 @@ body {
   fill: none;
   stroke: #9da4bd;
   transition: stroke var(--time-animation) var(--function-animation);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-wrap-right {
+    margin-right: 90px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-wrap-right {
+    margin-right: 0;
+  }
 }
 
 .contacts-pre-title {
