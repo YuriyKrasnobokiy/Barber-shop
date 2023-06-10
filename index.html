@@ -83,29 +83,57 @@
         <div class="about-container container">
           <ul class="about-list list">
             <li class="about-list-item">
-              <img
-                class="about-list-item-img"
-                src="./images/about-1.jpg"
-                alt="барбер стриже бороду"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/about-1-desc-1x.jpg 1x,
+                    ./images/desctop/about-1-desc-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/about-1-tablet-1x.jpg 1x,
+                    ./images/tablet/about-1-tablet-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <img src="./images/desctop/about-1-desc-1x.jpg" alt="барбер стриже бороду" />
+              </picture>
             </li>
             <li class="about-list-item">
-              <img
-                class="about-list-item-img"
-                src="./images/about-2.jpg"
-                alt="окантовка"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desctop/about-2-desc-1x.jpg 1x,
+                    ./images/desctop/about-2-desc-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/about-2-tablet-1x.jpg 1x,
+                    ./images/tablet/about-2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/about-2-mobile-1x.jpg 1x,
+                    ./images/mobile/about-2-mobile-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/desctop/about-2-desc-1x.jpg" alt="окантовка" />
+              </picture>
             </li>
           </ul>
 
           <div class="about-right">
             <p class="about-pre-title pre-title">Про нас</p>
-            <h2 class="about-title section-title">Кращий Barbershop твого міста</h2>
-            <p class="about-descr descr">
+            <h2 class="about-title">Кращий Barbershop твого міста</h2>
+            <p class="about-descr">
               Якщо ти бажаєш додати в свій повсякденний образ більше впевненості - тобі до нас.
             </p>
             <p class="about-text">
