@@ -3,17 +3,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: calc(50% + 15px);
-  padding-left: 100px;
+
+  @media screen and (min-width: 1200px) {
+    width: calc(50% + 15px);
+    padding-left: 100px;
+  }
 }
 
 .contacts-address {
-  margin-bottom: 70px;
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 70px;
+  }
 }
 
 .contacts-title {
   color: var(--white);
   margin-bottom: 40px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: unset;
+  }
 }
 
 .contacts-list-item {
@@ -53,9 +65,9 @@
   }
 }
 
-.contacts-link-pin {
-  align-items: unset;
-}
+// .contacts-link-pin {
+//   align-items: unset;
+// }
 
 .contacts-icon-phone {
   stroke-width: 1.5px;
@@ -71,7 +83,11 @@
 
 .contacts-pre-title {
   color: var(--white);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 
   &::before {
     background: var(--gray-on-black-opacity);

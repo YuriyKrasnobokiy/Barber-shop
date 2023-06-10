@@ -3,5 +3,9 @@
 }
 
 .connect-wrap-container {
-  display: flex;
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }

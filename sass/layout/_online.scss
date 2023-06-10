@@ -1,6 +1,10 @@
 .online {
-  width: calc(50% + 15px);
-  padding-right: 40px;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    padding-right: 40px;
+    width: calc(50% + 15px);
+  }
 }
 
 .online-title {
@@ -9,13 +13,17 @@
 }
 
 .online-input-wrap {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .online-input {
-  width: 270px;
+  width: 100%;
+
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--gray-on-black-opacity);
@@ -30,8 +38,18 @@
 
   transition: border-color var(--time-animation) var(--function-animation);
 
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+
   & + & {
-    width: 260px;
+    @media screen and (min-width: 1200px) {
+      width: 260px;
+    }
   }
 
   &::placeholder {
@@ -53,6 +71,12 @@
   &:hover.online-input::placeholder,
   &:focus.online-input::placeholder {
     color: var(--white);
+  }
+
+  &:first-child {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 44px;
+    }
   }
 }
 
@@ -98,4 +122,8 @@
 
 .online-button {
   color: var(--white);
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin: 0 auto;
+  }
 }
