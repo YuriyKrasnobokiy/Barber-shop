@@ -2,10 +2,8 @@
   background: var(--prices-background);
   background-image: url(../images/prices-bg.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  // max-width: 1200px;
-  // margin: 0 auto;
 }
 
 .prices-pre-title {
@@ -23,21 +21,34 @@
 }
 
 .prices-list-wrapper {
-  display: flex;
-  margin-bottom: 50px;
+  background: var(--prices-left-card-bg);
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-bottom: 50px;
+  }
 }
 
 .prices-left-list {
-  background: var(--prices-left-card-bg);
+  padding: 30px 30px 10px;
+
+  @media screen and (min-width: 1200px) {
+    background: var(--prices-left-card-bg);
+  }
 }
 
 .prices-right-list {
-  background: var(--prices-right-card-bg);
+  padding: 10px 30px 30px;
+
+  @media screen and (min-width: 1200px) {
+    background: var(--prices-right-card-bg);
+  }
 }
 
 .prices-list {
-  padding: 30px 40px;
-  width: 50%;
+  @media screen and (min-width: 1200px) {
+    padding: 30px 40px;
+    width: 50%;
+  }
 }
 
 .prices-list-item {
@@ -65,17 +76,27 @@
 }
 
 .prices-list-item-text {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 2.14;
   letter-spacing: 0.02em;
   color: var(--gray-on-black);
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 
 .prices-list-item-price {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 2.14;
   letter-spacing: 0.02em;
   color: var(--gray-on-black);
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 
 .prices-button {
