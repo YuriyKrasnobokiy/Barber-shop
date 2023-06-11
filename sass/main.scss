@@ -4,6 +4,14 @@
 @import './base/reset';
 @import './base/common';
 
+@import './components/container';
+@import './components/section';
+@import './components/btn';
+@import './components/pre-title';
+@import './components/section-title';
+@import './components/descr';
+@import './components/modal';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/about';
@@ -15,11 +23,3 @@
 @import './layout/online';
 @import './layout/contacts';
 @import './layout/footer';
-
-@import './components/container';
-@import './components/section';
-@import './components/btn';
-@import './components/pre-title';
-@import './components/section-title';
-@import './components/descr';
-@import './components/modal';

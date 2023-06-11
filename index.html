@@ -26,7 +26,7 @@
     <title>barber-shop</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container container">
         <nav class="header-nav">
           <svg class="logo-icon" width="66" height="55">
@@ -52,12 +52,62 @@
           <a href="tel:+380441111111" class="header-contacts-link link">+38 044 111 11 11</a>
           <button type="button" class="header-button btn" data-modal-open>онлайн-запис</button>
         </div>
+        <button class="open-menu-btn">
+          <svg class="open-menu-btn-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <!-- <div class="mob-backdrop"> -->
+        <div class="mob-menu is-hidden">
+          <div class="container mob-menu-container">
+            <div class="mob-menu-top">
+              <button class="close-menu-btn">
+                <svg class="close-menu-btn-icon" width="40" height="40">
+                  <use href="./images/icons.svg#icon-close-mob"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="#about" class="mob-menu-link link"> Про нас </a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="#prices" class="mob-menu-link link">Послуги та ціни</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="#masters" class="mob-menu-link link">Майстри</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="#contacts" class="mob-menu-link link">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu-bottom">
+              <div class="mob-menu-contacts">
+                <a href="tel:+380441111111" class="mob-menu-link mob-menu-tel link"
+                  >+38 044 111 11 11</a
+                >
+                <button type="button" class="mob-menu-button btn" data-modal-open>
+                  онлайн-запис
+                </button>
+              </div>
+              <ul class="mob-social-list list">
+                <li class="mob-social-item">
+                  <a href="#" class="mob-social-link link" title="Instagram">Instagram</a>
+                </li>
+                <li class="mob-social-item">
+                  <a href="#" class="mob-social-link link" title="Youtube">Youtube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
-      <!-- <section class="hero">
-        <div class="hero-container container">
+      <section class="hero">
+        <div class="container hero-container">
           <div class="sidebar">
             <ul class="sidebar-list list">
               <li class="sidebar-list-item">
@@ -77,7 +127,7 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section class="about section" id="about">
         <div class="about-container container">
@@ -132,8 +182,8 @@
 
           <div class="about-right">
             <p class="about-pre-title pre-title">Про нас</p>
-            <h2 class="about-title">Кращий Barbershop твого міста</h2>
-            <p class="about-descr">
+            <h2 class="about-title section-title">Кращий Barbershop твого міста</h2>
+            <p class="about-descr descr">
               Якщо ти бажаєш додати в свій повсякденний образ більше впевненості - тобі до нас.
             </p>
             <p class="about-text">
@@ -787,5 +837,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
