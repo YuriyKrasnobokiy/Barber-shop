@@ -21,8 +21,11 @@
   fill: var(--white);
   @media screen and (min-width: 768px) {
     fill: var(--black);
+    margin-right: 50px;
   }
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .header-nav-list {
@@ -34,7 +37,10 @@
 }
 
 .nav-list-item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 24px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 40px;
+  }
 }
 
 .nav-list-item-link {
@@ -54,8 +60,14 @@
 
 .header-contacts {
   display: none;
+
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
     align-items: center;
   }
 }
@@ -66,14 +78,20 @@
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+
   color: var(--white);
-  margin-right: 40px;
+  margin-top: 20px;
 
   transition: color var(--time-animation) var(--function-animation);
 
   &:hover,
   &:focus {
     color: var(--accent);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 40px;
+    margin-top: 0;
   }
 }
 
@@ -84,6 +102,9 @@
 
 .open-menu-btn {
   background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .close-menu-btn {
@@ -91,6 +112,15 @@
   margin-left: auto;
   margin-bottom: 30px;
   background-color: transparent;
+
+  fill: var(--black);
+
+  transition: fill var(--time-animation) var(--function-animation);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent);
+  }
 }
 
 .mob-backdrop {
@@ -101,6 +131,8 @@
   top: 0;
   left: 0;
   z-index: 5;
+  transition: opacity var(--time-animation) var(--function-animation),
+    visibility var(--time-animation) var(--function-animation);
 }
 
 .mob-menu {
@@ -147,6 +179,13 @@
   letter-spacing: 0.1em;
 
   color: var(--black);
+
+  transition: color var(--time-animation) var(--function-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 .mob-menu-contacts {
@@ -156,6 +195,15 @@
 .mob-menu-tel {
   display: block;
   margin-bottom: 24px;
+
+  color: var(--black);
+
+  transition: color var(--time-animation) var(--function-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 .mob-social-item {
@@ -174,4 +222,26 @@
   line-height: calc(19 / 14);
   letter-spacing: 0.2em;
   color: var(--black);
+
+  display: flex;
+  align-items: center;
+
+  transition: color var(--time-animation) var(--function-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    background: var(--black);
+  }
+}
+
+.mob-social-link2::before {
+  background: transparent;
 }
